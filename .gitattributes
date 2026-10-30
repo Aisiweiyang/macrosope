@@ -1,0 +1,11 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+*.cmd text eol=crlf
+*.xlsx binary
+*.parquet binary
+# 示例 CSV 同时包含 UTF-8 与 GBK，保持字节不变。
+sample_data/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,24 @@
+name: 问题报告
+description: 提交可以复现的错误
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: 版本与环境
+      description: 项目版本、操作系统、Python 版本；不要填写本机用户名或私人路径。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤与最小样例
+      description: 请使用合成数据，不上传个人数据库、原始资料或凭据。
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 预期与实际行为
+      description: 附上已脱敏的错误信息或截图。
+    validations:
+      required: true
